@@ -296,7 +296,7 @@ export default function AppBarMenu() {
               color="inherit"
             >
               <Avatar
-                src={user?.avatar_url ? user.avatar_url : <AccountCircle />}
+                src={user?.avatar_url.toString()}
                 alt="avatar"
                 style={{
                   border: '2.2px solid gold'
