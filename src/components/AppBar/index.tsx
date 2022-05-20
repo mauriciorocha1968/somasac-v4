@@ -33,8 +33,8 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { AuthContext } from '../../contexts/AuthContext'
 
-import imageHeader from '../../assets/icons/icon.png'
-import logo from '../../assets/images/logo.png'
+//import imageHeader from '../../assets/icons/icon.png'
+//import logo from '../../assets/images/logo.png'
 import { Item } from 'framer-motion/types/components/Reorder/Item'
 
 const drawerWidth = 240
@@ -256,7 +256,12 @@ export default function AppBarMenu() {
             <MenuIcon />
           </IconButton>
           {!open ? (
-            <Image src={imageHeader} alt="imageHeader" height={42} width={40} />
+            <Image
+              src="/public/icon.png"
+              alt="imageHeader"
+              height={42}
+              width={40}
+            />
           ) : (
             ''
           )}
@@ -317,7 +322,7 @@ export default function AppBarMenu() {
         <DrawerHeader>
           {open ? (
             <Image
-              src={logo}
+              src="/public/logo.png"
               alt="logo"
               height={32}
               width={130}
